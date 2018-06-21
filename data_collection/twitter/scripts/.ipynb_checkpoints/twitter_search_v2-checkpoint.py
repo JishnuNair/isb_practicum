@@ -25,7 +25,7 @@ latest_file = os.path.join(coinmarket_path,latest_file)
 
 ticker_df = pd.read_csv(latest_file)
 keywords = list(ticker_df.iloc[:3,5])
-keywords = ["#{0}".format(keyword.lower()) for keyword in keywords]
+keywords = [keyword.lower() for keyword in keywords]
 print(keywords)
 
 now = datetime.datetime.now()
@@ -33,7 +33,7 @@ now = datetime.datetime.now()
 for keyword in keywords:
     try:
         tso = TwitterSearchOrder() # create a TwitterSearchOrder object
-        tso.set_keywords(list(keyword),or_operator=True) # let's define all words we would like to have a look for
+        tso.set_keywords([keyword],or_operator=True) # let's define all words we would like to have a look for
         tso.set_language('en') # we want to see english tweets only
         tso.set_include_entities(False) # and don't give us all those entity information
 
