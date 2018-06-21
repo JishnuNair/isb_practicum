@@ -1,0 +1,30 @@
+from TwitterSearch import *
+import datetime
+import pandas as pd
+
+listings = pd.read_csv('/home/jishnu/Documents/ISB/Term3/practicum/workspace/data_collection/data/listings_20180613.csv')
+keywords = list(listings.iloc[:10,2])
+print(keywords)
+
+now = datetime.datetime.now()
+try:
+    tso = TwitterSearchOrder() # create a TwitterSearchOrder object
+    tso.set_keywords(keywords) # let's define all words we would like to have a look for
+    #tso.set_language('de') # we want to see German tweets only
+    tso.set_include_entities(False) # and don't give us all those entity information
+
+    # it's about time to create a TwitterSearch object with our secret tokens
+    ts = TwitterSearch(
+        consumer_key = 'tJKFqoExyXrBlvXRW0Cpk9iUp',
+        consumer_secret = 'YoEnqduMUAeRlBPK13sWgniP5eu0O8xHoXlTuw0Ht60ocpNTRB',
+        access_token = '341576524-jDpQev9B54G4DpEHAOfkDNSbpUzoU2wKpbaS1Tov',
+        access_token_secret = 'QQ7glr2qYKWAd5kzMeM04rdrUFmDyagCHkaMziNH9diKW'
+     )
+
+     # this is where the fun actually starts :)
+    with open('/home/jishnu/Documents/ISB/Term3/practicum/workspace/data_collection/twitter/data/tweets_{0}'.format(datetime.datetime.today().strftime('%Y%m%d')),'w') as fileout:
+        for tweet in ts.search_tweets_iterable(tso):
+            fileout.write('@%s tweeted: %s' % ( tweet['user']['screen_name'], tweet['text'] ) )
+
+except TwitterSearchException as e: # take care of all those ugly errors if there are some
+    print(e)

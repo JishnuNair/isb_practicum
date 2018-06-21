@@ -1,0 +1,70 @@
+{'created_at': 'Sat Jun 16 08:48:28 +0000 2018'
+ 'id': 1007907750196797440
+ 'id_str': '1007907750196797440'
+ 'text': '@JordanTuwiner Fees are now lower ... but not consistant at al ... fees on Bitcoin Cash are way less ... when the n… https://t.co/8LElusW1Q9'
+ 'truncated': True
+ 'metadata': {'iso_language_code': 'en'
+ 'result_type': 'recent'}
+ 'source': '<a href="https://mobile.twitter.com" rel="nofollow">Twitter Lite</a>'
+ 'in_reply_to_status_id':1007771263409016832
+ 'in_reply_to_status_id_str': '1007771263409016832'
+ 'in_reply_to_user_id': 79616936
+ 'in_reply_to_user_id_str': '79616936'
+ 'in_reply_to_screen_name': 'JordanTuwiner'
+ 'user': {'id': 2229041119
+ 'id_str': '2229041119'
+ 'name': 'Amadeo Brands'
+ 'screen_name': 'amadeobrands'
+ 'location': 'Amsterdam'
+ 'description': 'Fundamental Analyst @CyberCapitalBV'
+ 'url': 'https://t.co/BSvcodqDy1'
+ 'entities': {'url': {'urls': [{'url': 'https://t.co/BSvcodqDy1'
+ 'expanded_url': 'https://cyber.capital/'
+ 'display_url': 'cyber.capital'
+ 'indices': [0
+ 23]}]}
+ 'description': {'urls': []}}
+ 'protected': False
+ 'followers_count': 1560
+ 'friends_count': 1957
+ 'listed_count': 4
+ 'created_at': 'Wed Dec 04 00:21:41 +0000 2013'
+ 'favourites_count': 5212
+ 'utc_offset': None
+ 'time_zone': None
+ 'geo_enabled': True
+ 'verified': False
+ 'statuses_count': 3039
+ 'lang': 'en'
+ 'contributors_enabled': False
+ 'is_translator': False
+ 'is_translation_enabled': False
+ 'profile_background_color': 'C0DEED'
+ 'profile_background_image_url': 'http://abs.twimg.com/images/themes/theme1/bg.png'
+ 'profile_background_image_url_https': 'https://abs.twimg.com/images/themes/theme1/bg.png'
+ 'profile_background_tile': False
+ 'profile_image_url': 'http://pbs.twimg.com/profile_images/587736583228395520/SfUG3AoD_normal.jpg'
+ 'profile_image_url_https': 'https://pbs.twimg.com/profile_images/587736583228395520/SfUG3AoD_normal.jpg'
+ 'profile_banner_url': 'https://pbs.twimg.com/profile_banners/2229041119/1428962327'
+ 'profile_link_color': '1DA1F2'
+ 'profile_sidebar_border_color': 'C0DEED'
+ 'profile_sidebar_fill_color': 'DDEEF6'
+ 'profile_text_color': '333333'
+ 'profile_use_background_image': True
+ 'has_extended_profile': False
+ 'default_profile': True
+ 'default_profile_image': False
+ 'following': False
+ 'follow_request_sent': False
+ 'notifications': False
+ 'translator_type': 'none'}
+ 'geo': None
+ 'coordinates': None
+ 'place': None
+ 'contributors': None
+ 'is_quote_status': False
+ 'retweet_count': 0
+ 'favorite_count': 0
+ 'favorited': False
+ 'retweeted': False
+ 'lang': 'en'}

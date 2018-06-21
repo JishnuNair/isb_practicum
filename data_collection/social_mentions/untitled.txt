@@ -1,0 +1,12 @@
+|:--------------|:----------------
+q |url encoded query terms (can include exception ex: "iphone apps -blackberry")
+f | response format (json, php, xml, rss, csv)
+t[] | search type (blogs, microblogs, bookmarks, comments, events, images, news, videos, audio, questions, networks, all), can use multiple ex: http://socialmention.com/search?q=iphone&t[]=blogs&t[]=microblogs
+src[] | (optional) specific social media sources (ex: http://socialmention.com/search?q=iphone&src[]=twitter&t[]=youtube) 
+lang | (optional) 2 letter ISO 639-1 language code (if null - source default language will be returned
+strict | (default true) disable strict mode, which will not query sources that do not support the language param (true, false)
+l | location string (city and state/province). Required if search type is "events"
+callback | (optional) required for JSONP compatible requests
+key | (optional) required for commercial requests
+from_ts | (optional) remove results older than the supplied number of seconds, ex: to remove results older than 1 day &from_ts=86400 
+meta[] | (optional) meta data to include, ex: &meta.md=top |

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+python /home/jishnu/Documents/ISB/Term3/practicum/workspace/data_collection/coinmarket/coinmarketc
+ap_api.py
+
+
