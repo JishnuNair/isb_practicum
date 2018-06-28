@@ -37,7 +37,7 @@ for keyword in keywords:
         tso.set_language('en') # we want to see english tweets only
         tso.set_include_entities(False) # and don't give us all those entity information
 
-        # it's about time to create a TwitterSearch object with our secret tokens
+        # Creating a TwitterSearch object with secret tokens
         ts = TwitterSearch(
             consumer_key = 'tJKFqoExyXrBlvXRW0Cpk9iUp',
             consumer_secret = 'YoEnqduMUAeRlBPK13sWgniP5eu0O8xHoXlTuw0Ht60ocpNTRB',
@@ -45,7 +45,7 @@ for keyword in keywords:
             access_token_secret = 'QQ7glr2qYKWAd5kzMeM04rdrUFmDyagCHkaMziNH9diKW'
          )
 
-         # this is where the fun actually starts :)
+         # Pulling data using TwitterSearch library
         with open('/home/jishnu/Documents/ISB/Term3/practicum/workspace/data_collection/data/daily_data/{0}_tweets_{1}'.format(keyword,datetime.datetime.today().strftime('%Y%m%d')),'w') as fileout:
             #for tweet in ts.search_tweets_iterable(tso):
             #    fileout.write('@%s tweeted: %s' % ( tweet['user']['screen_name'], tweet['text'] ) )
